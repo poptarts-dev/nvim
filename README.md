@@ -20,6 +20,6 @@ git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 #### Clone the repository
 
 ```shell
-git clone https://github.com/austen/nvim
+git clone git@github.com:austenito/nvim
 ln -s ~/.config/nvim/lua/user .
 ```
