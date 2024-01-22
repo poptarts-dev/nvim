@@ -21,5 +21,12 @@ git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 
 ```shell
 git clone git@github.com:austenito/nvim
-ln -s ~/.config/nvim/lua/user .
+ln -s ~/.config/nvim/lua/user ~/nvim
+```
+
+### Dependencies
+
+```
+brew install ripgrep
+brew install gnu-sed
 ```
