@@ -30,3 +30,9 @@ ln -s ~/.config/nvim/lua/user ~/nvim
 brew install ripgrep
 brew install gnu-sed
 ```
+
+### LSP
+
+```
+:LSPInstall gopls
+```
