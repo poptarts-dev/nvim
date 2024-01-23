@@ -35,6 +35,9 @@ return {
     ["<leader>m"] = { name = "Marks" },
     ["<leader>md"] = { ":delm! | delmarks A-Z0-9<cr>", desc = "Delete All Marks" },
 
+    -- Live grep args
+    ["<leader>fa"] = { ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", desc = "Live grep args" },
+
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
