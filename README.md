@@ -24,14 +24,14 @@ git clone git@github.com:austenito/nvim
 ln -s ~/.config/nvim/lua/user ~/nvim
 ```
 
-### Dependencies
+### Installation
+
+#### Dependencies
 
 ```
 brew install ripgrep
 brew install gnu-sed
 ```
-
-### Installation
 
 #### Go
 
