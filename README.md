@@ -31,8 +31,11 @@ brew install ripgrep
 brew install gnu-sed
 ```
 
-### LSP
+### Installation
+
+#### Go
 
 ```
 :LSPInstall gopls
+:GoInstallBinaries
 ```
