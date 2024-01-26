@@ -63,6 +63,7 @@ return {
         disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
       },
     },
+    lockfile = vim.fn.stdpath("config") .. "/lua/user/lazy-lock.json",
   },
 
   -- This function is run last and is a good place to configuring
