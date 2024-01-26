@@ -38,6 +38,10 @@ return {
     -- Live grep args
     ["<leader>fa"] = { ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", desc = "Live grep args" },
 
+    -- Open in GitHub
+    ["<leader>gf"] = { ":OpenInGHFile <CR>", desc = "Open file in GitHub" },
+    ["<leader>gF"] = { ":OpenInGHFileLines <CR>", desc = "Open line in GitHub" },
+
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
