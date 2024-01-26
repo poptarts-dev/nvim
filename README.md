@@ -36,6 +36,7 @@ brew install gnu-sed
 #### Go
 
 ```
+:TSInstall go
 :LSPInstall gopls
 :GoInstallBinaries
 ```
