@@ -45,6 +45,11 @@ return {
     -- Spectre
     ["<leader>fS"] = { ":Spectre <CR>", desc = "Find and Replace" },
 
+    ["*"] = { "*N", desc = "Highlight word and keep cursor in the same location" },
+
+    ["<leader>un"] = { ":set norelativenumber<CR>", desc = "Show absolute line numbers" },
+    ["<leader>ur"] = { ":set relativenumber<CR>", desc = "Show relative line numbers" },
+
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
