@@ -1,28 +1,23 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
--- Customize Mason
-
----@type LazySpec
 return {
-  -- use mason-tool-installer for automatically installing Mason packages
   {
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
-    -- overrides `require("mason-tool-installer").setup(...)`
+    "mason-org/mason.nvim",
+    event = { "BufRead", "BufNewFile" },
+    lazy = false,
+    dependencies = {
+      "mason-org/mason-lspconfig.nvim",
+      "WhoIsSethDaniel/mason-tool-installer.nvim",
+      "yioneko/nvim-vtsls",
+      { "folke/lazydev.nvim", opts = {} },
+    },
     opts = {
-      -- Make sure to use the names found in `:Mason`
-      ensure_installed = {
-        -- install language servers
-        "lua-language-server",
-
-        -- install formatters
-        "stylua",
-
-        -- install debuggers
-        "debugpy",
-
-        -- install any other package
-        "tree-sitter-cli",
+      ui = {
+        icons = {
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗",
+        },
       },
     },
+    config = function() require("mason").setup() end,
   },
 }
