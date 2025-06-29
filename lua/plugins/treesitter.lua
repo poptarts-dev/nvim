@@ -5,7 +5,16 @@ return {
     lazy = false,
     cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
     opts = {
-      ensure_installed = { "bash", "html", "lua", "markdown", "vim", "vimdoc" },
+      ensure_installed = {
+        "bash",
+        "go",
+        "html",
+        "lua",
+        "markdown",
+        "typescript",
+        "vim",
+        "vimdoc",
+      },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
@@ -16,7 +25,6 @@ return {
     config = function(_, opts)
       ---@diagnostic disable-next-line: missing-fields
       require("nvim-treesitter.configs").setup(opts)
-      vim.treesitter.language.register("markdown", { "md", "mdx" })
     end,
   },
 }
