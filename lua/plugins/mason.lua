@@ -6,8 +6,6 @@ return {
     dependencies = {
       "mason-org/mason-lspconfig.nvim",
       "WhoIsSethDaniel/mason-tool-installer.nvim",
-      "yioneko/nvim-vtsls",
-      { "folke/lazydev.nvim", opts = {} },
     },
     opts = {
       ui = {
@@ -18,6 +16,26 @@ return {
         },
       },
     },
-    config = function() require("mason").setup() end,
+    config = function()
+      require("mason").setup {}
+
+      require("mason-tool-installer").setup {
+        ensure_installed = {
+          -- install language servers
+          "gopls",
+          "lua-language-server",
+          "marksman",
+          "typescript-language-server",
+
+          -- install formatters
+          "stylua",
+          "prettierd",
+          "prettier",
+
+          -- other packages
+          "tree-sitter-cli",
+        },
+      }
+    end,
   },
 }
