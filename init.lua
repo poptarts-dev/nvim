@@ -8,6 +8,7 @@ vim.g.have_nerd_font = true
 require "keymaps"
 require "autocmd"
 require "options"
+require "lsp"
 
 -- [[ Setup lazy plugin manager ]]
 require "config.lazy"
