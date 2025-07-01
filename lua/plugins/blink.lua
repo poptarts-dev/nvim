@@ -3,7 +3,11 @@ return {
 
   version = "1.*",
   opts = {
-    keymap = { preset = "default" },
+    keymap = {
+      ["<Up>"] = { "select_prev", "fallback" },
+      ["<Down>"] = { "select_next", "fallback" },
+      ["<CR>"] = { "accept", "fallback" },
+    },
 
     appearance = {
       nerd_font_variant = "mono",

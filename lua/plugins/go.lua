@@ -9,7 +9,10 @@ return {
     config = function()
       require("go").setup {
         lsp_cfg = false,
-        -- max_line_len = 160
+
+        lsp_inlay_hints = {
+          enable = false,
+        },
       }
 
       -- gofmt + goimport on save
@@ -19,6 +22,7 @@ return {
         callback = function() require("go.format").goimport() end,
         group = format_sync_grp,
       })
+
       local cfg = require("go.lsp").config() -- config() return the go.nvim gopls setup
       require("lspconfig").gopls.setup(cfg)
     end,
