@@ -1,8 +1,8 @@
 -- [[ Navigation ]] --
 
 vim.keymap.set("n", "<C-h>", "<C-w><left>", { remap = false, silent = true })
-vim.keymap.set("n", "<C-j>", "<C-w><up>", { remap = false, silent = true })
-vim.keymap.set("n", "<C-k>", "<C-w><down>", { remap = false, silent = true })
+vim.keymap.set("n", "<C-k>", "<C-w><up>", { remap = false, silent = true })
+vim.keymap.set("n", "<C-j>", "<C-w><down>", { remap = false, silent = true })
 vim.keymap.set("n", "<C-l>", "<C-w><right>", { remap = false, silent = true })
 
 -- [[ Insert Mode ]] --
