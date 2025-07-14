@@ -7,7 +7,7 @@ return {
   },
   config = function()
     require("toggleterm").setup {
-      open_mapping = [[<C-'>]],
+      open_mapping = [[<C-\>]],
       size = 30,
     }
     vim.keymap.set("n", "<leader>tf", ":ToggleTerm direction=float<CR>", { silent = true, desc = "Terminal floating" })
