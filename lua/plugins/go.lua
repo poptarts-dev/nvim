@@ -5,6 +5,9 @@ return {
       "ray-x/guihua.lua",
       "neovim/nvim-lspconfig",
       "nvim-treesitter/nvim-treesitter",
+      "mfussenegger/nvim-dap",
+      "rcarriga/nvim-dap-ui",
+      "nvim-neotest/nvim-nio",
     },
     config = function()
       require("go").setup {
@@ -13,6 +16,9 @@ return {
         lsp_inlay_hints = {
           enable = false,
         },
+
+        dap_debug = true,
+        dap_debug_keymap = true,
       }
 
       -- gofmt + goimport on save
