@@ -17,3 +17,10 @@ vim.keymap.set("n", "<ESC>", ":nohl<CR>", { desc = "Clear highlights" })
 
 vim.keymap.set("n", "<Leader>un", ":set norelativenumber<CR>", { desc = "Show absolute line numbers" })
 vim.keymap.set("n", "<Leader>ur", ":set relativenumber<CR>", { desc = "Show relative line numbers" })
+
+vim.keymap.set("n", "<leader>bd", function()
+  local current = vim.api.nvim_get_current_buf()
+  for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+    if vim.api.nvim_buf_is_loaded(buf) and buf ~= current then vim.api.nvim_buf_delete(buf, {}) end
+  end
+end, { desc = "Close all buffers except current" })
