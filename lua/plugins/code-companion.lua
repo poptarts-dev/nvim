@@ -17,6 +17,13 @@ return {
           chat = {
             adapter = "anthropic",
             model = "claude-sonnet-4-20250514",
+            variables = {
+              ["buffer"] = {
+                opts = {
+                  default_params = "watch",
+                },
+              },
+            },
           },
           inline = {
             adapter = "anthropic",
