@@ -16,13 +16,16 @@ return {
         strategies = {
           chat = {
             adapter = "anthropic",
+            model = "claude-sonnet-4-20250514",
           },
           inline = {
             adapter = "anthropic",
+            model = "claude-sonnet-4-20250514",
           },
         },
         display = {
           diff = {
+            enabled = false,
             provider = "mini_diff",
           },
           chat = {
