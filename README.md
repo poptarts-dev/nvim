@@ -28,11 +28,14 @@ brew install ripgrep
 brew install gnu-sed
 ```
 
-#### Go
+## Optional LSPs and Formatters
 
-```
-:GoInstallBinaries
-```
+Requires installation of n or nvm:
+
+* typescript-language-server
+* prettierd
+* prettier
+
 
 ## Plugins
 

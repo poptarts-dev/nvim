@@ -25,12 +25,9 @@ return {
           "gopls",
           "lua-language-server",
           "marksman",
-          "typescript-language-server",
 
           -- install formatters
           "stylua",
-          "prettierd",
-          "prettier",
 
           -- other packages
           "tree-sitter-cli",
